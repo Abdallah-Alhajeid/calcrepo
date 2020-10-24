@@ -1,0 +1,149 @@
+*{
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+html{
+	background-image: url(calcimg4.jpg);
+	background-repeat: repeat;
+}
+/* grid */
+.item1 {grid-area:header;}
+.item2 {grid-area:calculator;}
+.item3 {grid-area:footer;}
+
+.grid-container {
+	display: grid;
+	grid-template-areas: 
+	'header header header header header header'
+	'calculator calculator calculator calculator calculator calculator'
+	'footer footer footer footer footer footer' ;
+	/* grid-gap: 10px ; */
+	/* padding: 1rem; */
+}
+
+/* there isnt need to use media query 
+/* responsive*/
+/*  600px and down */
+@media only screen and (max-width: 600px) {
+
+}
+
+/*600px and up) */
+@media only screen and (min-width: 600px) {
+}
+
+/*768px and up) */
+@media only screen and (min-width: 768px) {
+}
+
+/*992px and up */
+@media only screen and (min-width: 992px) {
+}
+
+/*1200px and up */
+@media only screen and (min-width: 1200px) {
+} */
+
+body{
+	font-family: 'Open Sans',sans-serif;
+	overflow-x:hidden ;
+	/* that was test just to change calculator background */
+    /* background-image: url(calcimg.jpg); */
+	/* background-color: red; */
+}
+#container{
+	width: 20rem;
+	height: 35rem;
+	/* background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(bgImg.jpg); */
+	margin: 2rem auto;	
+}
+#calculator{
+	width: 20rem;
+	height: 32.5rem;
+	background-color: #f6f5f5;
+	margin: 0 auto;
+	top: 2rem;
+	position: relative;
+	border-radius: 2rem 4.5rem 2rem;
+	box-shadow: 0 0.5rem 0.7rem 0.5rem #ee6f57;
+}
+#result{
+	height: 7.5rem;
+}
+#history{
+	text-align: right;
+	height: 2rem;
+	margin: 0 2rem;
+	padding-top: 1.2rem;
+	font-size: 1rem;
+	color: #070d59;
+}
+#output{
+	text-align: right;
+	height: 3rem;
+	margin: 0.5rem 1rem;
+	font-size: 1.5rem;
+}
+#keyboard{
+	height: 25rem;
+}
+.operator, .number, .empty{
+	width: 3.1rem;
+	height: 3rem;
+	margin: 0.7rem;
+	float: left;
+	border-radius: 50%;
+	border-width: 0;
+	font-weight: bold;
+	font-size: 1.3rem;
+}
+.number{
+	background-color: #ffe2e2;
+}
+.empty {
+	background-color:#f6f5f5;
+}
+.number, .operator{
+	cursor: pointer;
+}
+.operator:active, .number:active{
+	font-size: 0.8rem;
+}
+.operator:focus, .number:focus, .empty:focus{
+	outline: 0;
+}
+/* buttons for +-*/= */
+button:nth-child(4){
+	font-size: 1.25rem;
+	background-color: blue;
+}
+button:nth-child(8){
+	font-size: 1.25rem;
+	background-color: #F77700;
+}
+button:nth-child(12){
+	font-size: 1.25rem;
+	background-color: teal;
+}
+button:nth-child(16){
+	font-size: 1.25rem;
+	background-color: rosybrown;
+}
+button:nth-child(20){
+	font-size: 1.25rem;
+	background-color:darkmagenta;
+}
+/* footer css */
+footer {
+    border-width: 0.5rem;
+    border-color: #ffc7c7;
+    border-style: groove ;
+    background-color: #ffe2e2;
+    color: #f6f5f;
+    box-shadow: #c7b198 0.5rem 0.6rem 2rem;
+	height:100%;
+	width: 100%;
+	margin-top: 11rem;
+}
+/* .Emailfo */
